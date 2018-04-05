@@ -29,8 +29,8 @@
       <file leaf-file-name="2-crawlWikipedia.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2-crawlWikipedia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="384">
+              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -63,6 +63,7 @@
         <option value="$PROJECT_DIR$/getWikiLinks3.py" />
         <option value="$PROJECT_DIR$/crawlSite.py" />
         <option value="$PROJECT_DIR$/1-getWikiLinks.py" />
+        <option value="$PROJECT_DIR$/2-crawlWikipedia.py" />
       </list>
     </option>
   </component>
@@ -400,8 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2-crawlWikipedia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="384">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
