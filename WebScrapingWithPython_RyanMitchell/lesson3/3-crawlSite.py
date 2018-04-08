@@ -1,14 +1,16 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+import re
 import datetime
 import random
-import re
 
 pages = set()
 random.seed(datetime.datetime.now())
 
+
 def getInternalLinks(bsObj, includeUrl):
     internalLinks = []
+
     for link in bsObj.findAll("a", href = re.compile("^(/|.*)" + includeUrl + ")")):
         if link.attrs["href"] is not None:
             if link.attrs["href"] not in internalLinks:
@@ -18,6 +20,8 @@ def getInternalLinks(bsObj, includeUrl):
 
 def getExternalLinks(bsObj, excludeUrl):
     externalLinks = []
+
+
     for link in bsObj.findAll("a", href = re.compile("^(http|www)((?!" + excludeUrl + ").)*$")):
         if link.attrs["href"] is not None:
             if link.attrs["href"] not in externalLinks:
