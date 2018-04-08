@@ -37,7 +37,7 @@ def getRandomExternalLink(startingPage):
     bsObj = BeautifulSoup(html)
     externalLinks = getExternalLinks(bsObj, splitAddress(startingPage)[0])
     if len(externalLinks) == 0:
-        internalLinks = getInternalLinks(startingPage)
+        internalLinks = getInternalLinks(bsObj, startingPage)
         return getRandomExternalLink(internalLinks[random.randint(0, len(internalLinks) - 1)])
         #return followExternalOnly(internalLinks[random.randint(0, len(internalLinks) - 1)])
     else:
