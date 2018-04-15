@@ -19,5 +19,5 @@ while(bsObj.find("a", {"id":"answer"}).attrs['title'] == "NO"):
     print("It is not Christmas yet.")
     time.sleep(3600)
     bsObj = BeautifulSoup(urlopen("https://isitchristmas.com/"))
-    
+
 sendMail("It's Christmas!", "According to http://itischristmas.com, it is Christmas!")
