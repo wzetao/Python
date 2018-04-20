@@ -8,7 +8,6 @@ wordFile = BytesIO(wordFile)
 document = ZipFile(wordFile)
 xml_content = document.read('word/document.xml')
 wordObj = BeautifulSoup(xml_content.decode('utf-8'), 'xml')
-print(wordObj)
 textStrings = wordObj.findAll("w:t")
 for textElem in textStrings:
     closeTag = ""
